@@ -1,0 +1,197 @@
+/* Navigation Bar CSS */
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 3px;
+    height: 10vh;
+    position: sticky;
+    top:0px;
+    z-index: 2;
+}
+.nav .left img{
+    object-fit: cover;
+    height: 50%;
+    width: 60%;
+    cursor: pointer;
+}
+.nav .right{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    font-size: 1.5rem;
+}
+.nav .right div a{
+    padding:20px;
+    text-decoration: none;
+    color:black;
+}
+.nav .right div a:active{
+    text-decoration: underline;
+    text-decoration-thickness:5px;
+    text-decoration-color:darksalmon;
+}
+.nav .right div:hover{
+    text-decoration: underline;
+    text-decoration-thickness:5px;
+    text-decoration-color:darksalmon;
+    transition: 0.1s;
+}
+.nav .menu{
+    display: none;
+    font-size: 2.2rem;
+    color:black;
+    cursor: pointer;
+    position:relative;
+}
+.nav .menu .cancel{
+    font-size: 1.9rem;
+    display: none;
+    
+}
+.nav .menu .menu-drop{
+    position: absolute;
+    right:0px;
+    width:230px;
+    cursor: default;
+    padding:2px;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 5px;
+    display: none;
+}
+.nav .menu p a{
+    font-size: 1.6rem;
+    margin:0px;
+    margin:5px;
+    border-bottom: 1px solid darksalmon;
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    padding:5px;
+    text-decoration: none;
+    color:black;
+}
+.nav .menu p:hover{
+    background-color: lightblue;
+}
+
+/* Navigation Bar Responsive Media Query */
+
+@media screen and (max-width:1200px){
+    .nav .right{
+        display: none;
+    }
+    .nav .menu{
+        display: inline-block;
+    }
+}
+
+
+/* Carousel Settings */
+
+.car-contianer{
+    margin-top: 5vh;
+}
+
+.carousel-item img {
+    border-radius: 50px;
+    height: 65vh;
+}
+
+/* Welcome Page Section */
+
+.car-contianer #welcome{
+    margin:20px;
+    padding:50px;
+}
+.car-contianer .welcome h1{
+    margin-bottom: 30px;
+}
+
+/* Industry Page Section */
+
+.car-contianer #industries{
+    background-color: rgba(233, 150, 122, 0.3);
+    padding:50px;
+    padding-bottom:0px;
+}
+.car-contianer #industries h2{
+    margin-bottom: 20px;
+}
+
+.car-contianer #industries img{
+    object-fit: cover;
+    height: 80%;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px;
+}
+
+/* Tech Hub Page Section */
+
+.car-contianer #tech-hub{
+    padding:50px;
+    padding-bottom:0px;
+    margin:20px;
+}
+.car-contianer #tech-hub h2{
+    margin-bottom: 20px;
+}
+.car-contianer #tech-hub img{
+    object-fit: cover;
+    height: 80%;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px;
+    margin-top: 9vh;
+}
+
+/* About Us Page Section */
+
+.car-contianer #about-us{
+    padding:50px;
+    padding-bottom:0px;
+    margin:20px;
+    background-color: rgba(233, 150, 122, 0.3);
+}
+.car-contianer #about-us h2{
+    margin-bottom: 20px;
+}
+
+/* Contact Us Section */
+
+.car-contianer #contact-us{
+    background-color: rgba(95, 158, 160, 0.3);
+    padding:20px;
+}
+.car-contianer #contact-us textarea{
+    resize: none;
+}
+.car-contianer #contact-us input{
+    padding:10px;
+}
+.car-contianer #contact-us textarea,
+.car-contianer #contact-us input{
+    outline: none;
+    border: none;
+    margin:20px;
+    border-radius: 5px;
+}
+.car-contianer #contact-us textarea::placeholder,
+.car-contianer #contact-us input::placeholder{
+    color:black;
+    padding:10px;
+}
+
+.car-contianer #contact-us button{
+    margin-left: 20px;
+    border: none;
+    padding:5px 25px; 
+    background-color: mediumseagreen;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color:white;
+}
